@@ -75,7 +75,7 @@ const Login = () => {
             </div>
 
             <span className="forgot-password">
-              <a href="../forgotpass/forgotpassword.jsx">Forgot password?</a>
+              <a href="/password/forgot">Forgot password?</a>
             </span>
             
             <span className="dont-have-account">
@@ -84,6 +84,7 @@ const Login = () => {
           
             <div className="login-btn">
               <button
+                className="button1"
                 type="Submit"
                 id="sumbit"
                 name="submit"

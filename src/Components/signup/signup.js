@@ -16,7 +16,7 @@ function Signup() {
         <div className="container">
           <form action="#" method="POST" >
             <div className="login">
-              <h2>SIGN IN</h2>
+              <h2>SIGN UP</h2>
             </div>
             <hr></hr>
             <div className="name">
