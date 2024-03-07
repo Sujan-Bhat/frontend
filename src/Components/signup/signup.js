@@ -69,7 +69,7 @@ function Signup() {
                 type="Submit"
                 id="sumbit"
                 name="submit"
-                
+                className="button1"
               >Signup</button>
             </div>
           </form>
