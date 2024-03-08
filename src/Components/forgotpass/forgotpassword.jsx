@@ -6,6 +6,7 @@ const forgot = () => {
     <div className="body1">
       <div className="row">
         <h1>Forgot Password</h1>
+        <hr></hr>
         <div className="form-group">
             <div className="email-2">
           <input

@@ -44,7 +44,7 @@ const Login = () => {
             <div className="login">
               <h2>SIGN IN</h2>
             </div>
-            
+            <hr></hr>
             <div className="e-mial">
               <label htmlFor="e-mails" className="label-for-email">
                 
