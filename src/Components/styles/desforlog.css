@@ -70,7 +70,7 @@ input:focus{
 }
 input[type="email"],
 input[type="password"],
-input[type="name"] {
+input[type="text"] {
   width: 89%;
   height: 5vh;
   border-top: none;

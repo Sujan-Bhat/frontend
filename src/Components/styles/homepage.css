@@ -1,0 +1,60 @@
+:root {
+  --primary: red;
+  --secondary: black;
+  --imp: #fffce8;
+}
+.header img {
+  height: 80px;
+}
+.body-of-layout {
+  height: 125vh;
+}
+.header {
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.navi {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-bar {
+  height: 100%;
+  width: 50%;
+}
+
+.header * {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.listu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+  font-weight: bold;
+}
+.list {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.list,
+.listu {
+  height: 100%;
+}
+.list:hover {
+  background-color: var(--imp);
+  text-decoration: underline;
+  
+}

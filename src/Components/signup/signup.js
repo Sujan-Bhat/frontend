@@ -24,7 +24,7 @@ function Signup() {
                 
               </label>
               <input
-                type="name"
+                type="text"
                 id="name"
                 placeholder="Username"
                 name="name"

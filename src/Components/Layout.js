@@ -1,11 +1,10 @@
-import { Outlet, Link,useNavigate } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import { useGetMeQuery } from "../redux/api/userApi";
 import { useSelector } from "react-redux";
 import { useLazyLogoutQuery } from "../redux/api/authApi";
-
+import "../Components/styles/homepage.css";
 
 const Layout = () => {
-
   const navigate = useNavigate();
 
   const { isLoading } = useGetMeQuery();
@@ -15,36 +14,50 @@ const Layout = () => {
 
   const logoutHandler = () => {
     logout();
-    navigate(0)
+    navigate(0);
   };
 
   return (
-    <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-            {user?(
-              <><Link>{user?.name}</Link>
-              <br />
-              <Link to="/" onClick={logoutHandler}>Logout</Link></>
-
-            ):!isLoading &&(
-              <><li>
-                <Link to="/login">Login</Link>
-              </li><li>
-                  <Link to="/register">Register</Link>
-                </li>
+    <div className="body-of-layout">
+      <header className="header">
+        <img src="" alt="logo"></img>
+        <div className="navi">
+          <nav className="navigation-bar">
+            <ul className="listu">
+              <li className="list">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="list">
+                <Link to="">Menu</Link>
+              </li>
+              {user ? (
+                <>
+                  <Link>{user?.name}</Link>
+                  <br />
+                  <Link to="/" onClick={logoutHandler}>
+                    Logout
+                  </Link>
                 </>
-            )}
-         
-        </ul>
-      </nav>
-
+              ) : (
+                !isLoading && (
+                  <>
+                    <li className="list">
+                      <Link to="/login">Login</Link>
+                    </li>
+                    <li className="list">
+                      <Link to="/register">Register</Link>
+                    </li>
+                  </>
+                )
+              )}
+            </ul>
+          </nav>
+        </div>
+      </header>
       <Outlet />
-    </>
-  )
+      <main></main>
+    </div>
+  );
 };
 
 export default Layout;
