@@ -29,8 +29,8 @@ a{
   justify-content: center;
   align-items: center;
   min-width: 300px;
-  background-color: var(--secondary);
-  background: radial-gradient(circle, var(--primary), var(--secondary));
+  background-color: var(--imp);
+  /* background: radial-gradient(circle, var(--primary), var(--secondary)); */
 }
 
 .container {

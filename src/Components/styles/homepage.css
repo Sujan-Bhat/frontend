@@ -4,7 +4,11 @@
   --imp: #fffce8;
 }
 .header img {
-  height: 80px;
+  height: 90% !important;
+  width: auto;
+  margin-left: 1rem;
+  aspect-ratio: 1/1;
+  
 }
 .body-of-layout {
   height: 125vh;
@@ -18,6 +22,14 @@
   height: 80px;
   display: flex;
   align-items: center;
+  
+}
+.upperh{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
 }
 .navi {
   width: 100%;
@@ -56,5 +68,19 @@
 .list:hover {
   background-color: var(--imp);
   text-decoration: underline;
-  
+}
+.main{
+  height: 60vh;
+}
+.order{
+  height: 20%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ordernow{
+  height: 50%;
+  width: 40%;
+ 
 }
